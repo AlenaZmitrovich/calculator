@@ -1,4 +1,4 @@
-function useCalculator() {
+function startCalculator() {
   class Button {
     constructor(element, backgroundColor) {
       this.element = element;
