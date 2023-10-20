@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.wrapper {
+  position: absolute;
+  top: 20%;
+  left: calc((100% - 350px) / 2);
+  width: 350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 100px 70px 70px 70px 70px 70px;
+  border: 1px solid black;
+  border-radius: 3%;
+  overflow: hidden;
+  background-color: black;
+  grid-gap: 1px;
+  box-shadow: inset rgba(0,0,0,.6) 0 -3px 8px, 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sup {
+  height: 50%;
+  font-size: 20px;
+}
+
+.sub {
+  height: 20%;
+  font-size: 20px;
+}
+
+.result.button {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 50px;
+  font-weight: 300;
+  justify-content: end;
+  align-items: end;
+  padding-right: 30px;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.darkgray {
+  background-color: rgb(95, 95, 95);
+}
+
+.gray {
+  background-color: rgb(114, 114, 114);
+}
+
+.lightgray {
+  background-color: rgb(143, 143, 143);
+}
+
+.orange {
+  background-color: rgb(255, 166, 0);
+}
+
+.lightgray-pressed {
+  background-color: rgb(188, 188, 188); 
+}
+
+.orange-pressed {
+  background-color: rgb(196, 128, 1);
+}
+
+.gray-pressed{
+  background-color: rgb(143, 143, 143);
+}
+
+.smaller {
+  font-size: 30px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
